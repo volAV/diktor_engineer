@@ -1,0 +1,66 @@
+// English engineering keyboard layout
+// Based on the English "Colemak-DH" keyboard layout
+// Volochay Andrey <andrey@volochay.info>
+// Last changes 2023/02/11
+// Version 1.0
+
+partial alphanumeric_keys
+xkb_symbols "colemak_dh_engineer" {
+
+    name[Group1]= "English (Colemak-DH Engineer)";
+
+    key <TLDE> { [ grave,  asciitilde,         U00B0, U00B7 ] };  // ` ~ ° ·
+    key <AE01> { [     1,      exclam,   onesuperior, U2081 ] };  // 1 ! ¹ ₁
+    key <AE02> { [     2,          at,   twosuperior, U2082 ] };  // 2 @ ² ₂
+    key <AE03> { [     3,  numbersign, threesuperior, U2083 ] };  // 3 # ³ ₃
+    key <AE04> { [     4,      dollar,  foursuperior, U2084 ] };  // 4 $ ⁴ ₄
+    key <AE05> { [     5,     percent,  fivesuperior, U2085 ] };  // 5 % ⁵ ₅
+    key <AE06> { [     6, asciicircum,   sixsuperior, U2086 ] };  // 6 ^ ⁶ ₆
+    key <AE07> { [     7,   ampersand, sevensuperior, U2087 ] };  // 7 & ⁷ ₇
+    key <AE08> { [     8,    asterisk, eightsuperior, U2088 ] };  // 8 * ⁸ ₈
+    key <AE09> { [     9,   parenleft,  ninesuperior, U2089 ] };  // 9 ( ⁹ ₉
+    key <AE10> { [     0,  parenright,  zerosuperior, U2080 ] };  // 0 ) ⁰ ₀
+    key <AE11> { [ minus,  underscore,         U207B, U208B ] };  // - _ ⁻ ₋
+    key <AE12> { [ equal,        plus,         U207A, U208A ] };  // = + ⁺ ₊
+
+    key <AD01> { [            q,          Q,     NoSymbol,     NoSymbol ] };  // q Q
+    key <AD02> { [            w,          W,     NoSymbol,     NoSymbol ] };  // w W
+    key <AD03> { [            f,          F,     NoSymbol,     NoSymbol ] };  // f F
+    key <AD04> { [            p,          P,        U2032,        U03C0 ] };  // p P ′ π
+    key <AD05> { [            b,          B,     NoSymbol,     NoSymbol ] };  // b B
+    key <AD06> { [            j,          J,     NoSymbol,     NoSymbol ] };  // j J
+    key <AD07> { [            l,          L,        U03BB,     NoSymbol ] };  // l L λ
+    key <AD08> { [            u,          U,   udiaeresis,   Udiaeresis ] };  // u U ü Ü
+    key <AD09> { [            y,          Y,     NoSymbol,     NoSymbol ] };  // y Y
+    key <AD10> { [   apostrophe,   quotedbl,     NoSymbol,     NoSymbol ] };  // ' "
+    key <AD11> { [  bracketleft,  braceleft,     NoSymbol,     NoSymbol ] };  // [ {
+    key <AD12> { [ bracketright, braceright,        U2192,     NoSymbol ] };  // ] } →
+    key <BKSL> { [    backslash,        bar,     NoSymbol,     NoSymbol ] };  // \ |
+
+    key <AC01> { [         a,     A, adiaeresis, Adiaeresis ] };  // a A ä Ä
+    key <AC02> { [         r,     R, registered,      U20BD ] };  // r R ® ₽
+    key <AC03> { [         s,     S,      U00DF,      U1E9E ] };  // s S ß ẞ
+    key <AC04> { [         t,     T,  trademark,   NoSymbol ] };  // t T ™
+    key <AC05> { [         g,     G,   NoSymbol,   NoSymbol ] };  // g G
+    key <AC06> { [         m,     M,      U00D7,      U03BC ] };  // m M × μ
+    key <AC07> { [         n,     N,      U2013,   NoSymbol ] };  // n N –
+    key <AC08> { [         e,     E,      U21CC,      U20AC ] };  // e E ⇌ €
+    key <AC09> { [         i,     I,      U2206,   NoSymbol ] };  // i I ∆
+    key <AC10> { [         o,     O, odiaeresis, Odiaeresis ] };  // o O ö Ö
+    key <AC11> { [ semicolon, colon,   NoSymbol,   NoSymbol ] };  // ; :
+
+    key <LSGT> { [ NoSymbol, NoSymbol,         NoSymbol,         NoSymbol ] };  //
+    key <AB01> { [        z,        Z,         NoSymbol,         NoSymbol ] };  // z Z
+    key <AB02> { [        x,        X,         NoSymbol,         NoSymbol ] };  // x X
+    key <AB03> { [        c,        C,        copyright,            U00A2 ] };  // c C © ¢
+    key <AB04> { [        d,        D,         NoSymbol,         NoSymbol ] };  // d D
+    key <AB05> { [        v,        V,         NoSymbol,         NoSymbol ] };  // v V
+    key <AB06> { [        k,        K,         NoSymbol,         NoSymbol ] };  // k K
+    key <AB07> { [        h,        H,            U002D,            U2027 ] };  // h H - ‧
+    key <AB08> { [    comma,     less,    guillemotleft,    lessthanequal ] };  // , < « ≤
+    key <AB09> { [   period,  greater,   guillemotright, greaterthanequal ] };  // . > » ≥
+    key <AB10> { [    slash, question,         NoSymbol,         NoSymbol ] };  // / ?
+
+    include "level3(ralt_switch)"
+    include "kpdl(dot)"
+};
